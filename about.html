@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+        <title>About | Obesity Project</title>
+        <style>
+         /* Apply dark gray background to the whole page */
+         body {
+           background-color: rgb(76, 76, 76);
+           /* Additional styles for better readability */
+           color: rgb(255, 255, 255);
+           font-family: Arial, sans-serif;
+         }
+         .red-button {
+         display: inline-block;
+         padding: 15px 25px;
+         background-color: rgb(167, 0, 0);
+         color: white;
+         text-decoration: none;
+         font-size: 16px;
+         border-radius: 5px;
+         }
+       </style>
+     </head>
+ <body>
+   <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <img src="https://d15gkqt2d16c1n.cloudfront.net/images/universities/logos/University_of_Notre_Dame_Logo" class="mr-2" width="30" height="30">
+      <a class="navbar-brand" href="index.html">Principles of Computing Project</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>        
+       <div class="collapse navbar-collapse" id="navbar-body">
+          <ul class="navbar-nav mr-auto"></ul>
+          <ul class="navbar-nav ml-auto">
+             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+             <li class="nav-item"><a class="nav-link" href="demo_page.html">| Demo Videos |</a></li>
+             <li class="nav-item"><a class="nav-link" href="charts.html">All Charts |</a></li>
+             <li class="nav-item"><a class="nav-link" href="more.html">More Data on Obesity</a></li>
+             <li class="nav-item dropdown">
+             </li>
+          </ul>
+       </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid" style="background-color: rgb(23, 23, 23);">
+      <div class="container text-center">
+        <h1 class="display-4" style="font-size: 128px;">About</h1>
+        <p class="lead">Why did we do this project?</p>
+      </div>    
+   </div>
+
+   <div class="jumbotron jumbotron-fluid" style="background-color: rgb(75, 75, 75);">
+      <div class="container text">
+        <h2 class="display-4" style="font-size: 64px;">Our Motivation</h2>
+        <br>
+        <p> Obesity has severe impacts on health and can even affect quality of life. It is a risk factor for age-related diseases and decreases life expectancy by 7 years. 
+         Nationally, 41.9 percent of adults have obesity.
+         According to the National Institutes of Health, obesity and overweight together are the second leading cause of preventable death in the United States, close behind tobacco use. 
+         An estimated 300,000 deaths per year are due to the obesity epidemic.
+      </p>
+        <br>
+        <p> Our goal is to make people more aware of habits that can help them curb their risk of obesity or take measures to reduce its severity. </p>
+      </div>
+
+   <div class="jumbotron jumbotron-fluid" style="background-color: rgb(75, 75, 75);">
+      <div class="container text">
+        <h2 class="display-4" style="font-size: 64px;">Data Sources</h2>
+        <p> Our project presents a comprehensive dataset for estimating obesity levels in individuals across Mexico, Peru, and Colombia, predicated on their dietary patterns and physical well-being. The dataset encompasses 17 attributes and comprises 2111 records, each distinctly labeled with the class variable "NObeyesdad" denoting Obesity Level. This classification system facilitates the categorization of data into classes such as Insufficient Weight, Normal Weight, Overweight Level I, Overweight Level II, Obesity Type I, Obesity Type II, and Obesity Type III. </p>
+        <br>
+        <p> Of the total dataset, 77% was synthetically generated using the Weka tool and the SMOTE filter, enhancing the richness and diversity of the data. The remaining 23% was directly sourced from user inputs through a dedicated web platform, ensuring a real-world dimension to the dataset.</p>
+        <br>
+        <p> The mix of synthetic and user-generated data was meant to ensure, by the collectors of the data, a robust dataset for meaningful insights and practical applications in obesity research and management.</p>
+        <div class="container" id="bsr-wrapper">
+         <div class="row">
+            <div class="col-md-9">
+               <p>This data source tracks:</p>
+               <ul>
+                  <li>Gender</li>
+                  <li>Age</li>
+                  <li>Height</li>
+                  <li>Weight</li>
+                  <li>Family history with overweight</li>
+                  <li>FAVC (Consume high-calorie foods frequently)</li>
+                  <li>FCVC (Number of meals where you usually eat vegetables)</li>
+                  <li>NCP (Number of main meals a day)</li>
+                  <li>CAEC (Eat food between meals)</li>
+                  <li>Smoking</li>
+                  <li>NObeyesdad (Obesity Level)</li>
+                  <li>CH20 (Consumption of water daily)</li>
+                  <li>CALC (Consumption of alcohol)</li>
+                  <li>SCC (Calories consumption monitoring)</li>
+                  <li>FAF (Physical activity frequency)</li>
+                  <li>TUE (Time using technology devices)</li>
+                  <li>MTRANS (Transportation used)</li>
+                </ul>
+            </div>
+         </div>
+        <a href="https://www.kaggle.com/datasets/lesumitkumarroy/obesity-data-set">Link to Data Source</a>
+      </div> 
+   </div> 
+
+   <div class="jumbotron jumbotron-fluid" style="background-color: rgb(75, 75, 75);">
+      <div class="container text">
+        <h2 class="display-4" style="font-size: 64px;">Data Journey and Caveats</h2>
+        <br>
+        <p> After downloading the .csv file, we transferred the file as text into our colab file to consolidate the number of files and lines of code we would need to use.
+         After the transfer, we made the file into a pandas DataFrame that would allow us to visualize the data more easily.
+         Once we created this, we added another column for Body Mass Index(BMI). This was calculated using the formula BMI= weight (kg) / height (m) ^ 2 </p>
+        <br>
+        <p>
+         Then, we created 9 visualizations based on the 17 other attributes listed above. Using plotly.express and our DataFrame, we were able to quickly and efficiently create visualizations.
+         We were also able to make many updates to our charts using plotly's update functions, that proved especially helpful in the organization of variables and the quality of our presentation of the data.
+        </p>
+      </div>
+
+   <div class="jumbotron jumbotron-fluid" style="background-color: rgb(75, 75, 75);">
+      <div class="container text">
+        <h2 class="display-4" style="font-size: 64px;">Learning and Conclusions</h2>
+        <br>
+        <p>Having delved into the analysis of the data, it's imperative to acknowledge that a significant portion, approximately 77%, was synthetically generated, potentially introducing biases into the findings. As we reflect on our observations, we'd like to emphasize the need for future studies in this region to incorporate a more extensive set of real-world data.</p>
+        <br>
+        <p>Despite this, the analysis has provided valuable insights into the landscape of obesity across Mexico, Peru, and Colombia. Amidst these considerations, the dataset itself remains a rich source of information, offering a rich perspective on the intricate interplay of dietary habits, physical conditions, and obesity levels. The journey of analysis has been an enlightening exploration of the multifaceted nature of obesity. This dataset, with its strengths and limitations, becomes a reflective stepping stone, marking a starting point for better understanding and finding innovative solutions to address obesity's impact on diverse populations in Mexico, Peru, and Colombia.</p>
+      </div>
+
+   <div class="jumbotron jumbotron-fluid" style="background-color: rgb(75, 75, 75);">
+      <div class="container text">
+        <h2 class="display-4" style="font-size: 64px;">About the Project Members</h2>
+        <br>
+        <p>Nadxielli Arredondo, currently in her junior year, is pursuing a major in FTT with a concentration in Film, complemented by a supplementary major in Latino Studies.</p>
+        <br>
+        <p>Brendan Schaefer is a senior from Arlington, Texas, pursuing a degree in Finance. He currently lives on-campus in Keenan Hall.</p>
+         <br>
+      <hr>
+      </div>
+
+      <div class='py-3 my-4'></div>
+
+      <div class="col d-flex justify-content-center mb-4">
+         <a href="about.html" class="red-button">Back to Top</a>
+         </div>
+
+ </div>
+   <div class="jumbotron jumbotron-fluid" style="background-color: rgb(23, 23, 23);">
+      <div class="container text-center">
+         <h2>Thank you for visiting our project!</h2>
+        <p class="lead">project-1-04</p>
+      </div>    
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+ </body>
+</html>
